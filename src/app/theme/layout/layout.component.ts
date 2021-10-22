@@ -43,7 +43,7 @@ export class LayoutComponent implements OnInit {
   public desktopHeaderClass: string = 'desktop-header-1';
   public horizontalNavClass: string = 'navbar-dark';
 
-  public desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+  public desktopLogo = 'assets/images/logo.svg';
 
   public collapsedCard: string = 'collapsed';
 
@@ -63,10 +63,10 @@ export class LayoutComponent implements OnInit {
         this.desktopHeaderClass = 'desktop-header-1';
         switch (this.themeConfig.themeType) {
           case 'light':
-              this.desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+              this.desktopLogo = 'assets/images/logo.svg';
             break;
           default:
-            this.desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+            this.desktopLogo = 'assets/images/logo.svg';
         }
         break;
       case 'collapsed':
@@ -75,10 +75,10 @@ export class LayoutComponent implements OnInit {
         this.contentClass = 'content-2';
         switch (this.themeConfig.themeType) {
           case 'light':
-            this.desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+            this.desktopLogo = 'assets/images/logo.svg';
             break;
           default:
-            this.desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+            this.desktopLogo = 'assets/images/logo.svg';
         }
         break;
       case 'horizontal':
@@ -87,10 +87,10 @@ export class LayoutComponent implements OnInit {
         switch (this.themeConfig.themeType) {
           case 'light':
             this.horizontalNavClass = 'navbar-light';
-            this.desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+            this.desktopLogo = 'assets/images/logo.svg';
             break;
           default:
-            this.desktopLogo = 'assets/images/AntiPatronSoft_imagen.png';
+            this.desktopLogo = 'assets/images/logo.svg';
         }
         break;
     }
