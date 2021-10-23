@@ -4,16 +4,16 @@ import { LayoutComponent } from './theme/layout/layout.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/theme/view',
+    path: '**',
+    redirectTo: '/root/iam',
     pathMatch: 'full'
   },
   {
-    path: 'theme',
+    path: 'root',
     component: LayoutComponent,
     children: [
       {
-        path: 'view',
+        path: 'iam',
         loadChildren: () => import('./view/view.module').then(module => module.ViewModule)
       }
     ]
